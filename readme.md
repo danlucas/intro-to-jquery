@@ -1,49 +1,32 @@
-> Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and add the specifics about your class below.
+# Intro to jQuery
 
-# Add Your Course Title Here
-
-Slides and materials are hosted at [http://example.com/](http://example.com/).
+Slides and materials are hosted [here](http://teaching-materials.org/jquery).
 
 ## Course description
 
-Use this space for a short description of your course. We recommend using the description from your meetup event.
+In this workshop, we will introduce jQuery, the most popular JavaScript library for making webpages interactive.
 
-**Cost:** 
-
-**Dates:** 
-
-**Location:** 
-
-A limited number of scholarships are available for those with a financial hardship. To apply, contact us at...
+The workshop will be a mix of lectures and hands-on exercises in pairs, and will be taught by [teacher X, tiny bio].This is the perfect follow-up workshop for those who have attended our JS for the Web workshop.
 
 
 ### Prerequisites:
 
-List any prerequisites for this class, including any previous classes or the equivalent self-study or real-world skills.
+Attendees should be comfortable with HTML/CSS fundamentals (HTML tags and attributes, CSS selectors) and JavaScript fundamentals (syntax, data structures, conditionals, loops). Attendees should also have learned the DOM API (access and modication methods). That means that you either attended our HTML 101 workshop, JS 101 workshop, and JS for the Web workshop, or that you learned those concepts online.
 
-You should have:
-
-(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
-
-(b) built and managed websites on your own,
-
-**And also:**
-
-(a) taken intro to JavaScript through Girl Develop It, or
-
-(b) be familiar with syntax, arrays, conditionals, for and while loops, event handling, jQuery, AJAX requests, and handling JSON responses.
+You can review them online at a few places:
+* HTML/CSS: [Khan Academy's HTML/CSS course](https://khanacademy.org/html-css), [Codecademy's HTML/CSS course](https://www.codecademy.com/tracks/web), [GDI SF HTML/CSS slides](http://teaching-materials.org/htmlcss-1day)
+* JS: [Codecademy's JS course](https://www.codecademy.com/tracks/javascript), [Khan Academy's Intro to JS course](https://khanacademy.org/programming),  [GDI SF JS slides](http://teaching-materials.org/javascript)
+* DOM API: [Khan Academy's "Making Webpages Interactive" course](https://khanacademy.org/html-css-js)
 
 
 ### Tech requirements:
 
- - Your laptop (Mac, PC, or Linux are all okay).
- - A modern web browser - either Chrome or Firefox with Firebug installed.
- - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
-
+* Your laptop (Mac, PC, or Linux are all okay) and charger.
+* A modern web browser - either Chrome or Firefox.
+* A text editor. We recommend Sublime Text 2 (free; available for both Mac and PC) or Notepad++ (PC).
 
 ### Topics covered:
 
- - The topics you plan to cover
- - Written in list form
- - Here's another one
-
+* What is jQuery?
+* What is a JavaScript library?
+* Finding, creating, changing, and reading elements.

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+		<title>Intro to jQuery</title>
 
 		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
 		<meta name="author" content="Girl Develop It">
@@ -40,6 +40,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+    <style>
+      table {
+        width: 100%;
+      }
+    </style>
 	</head>
 
 	<body>
@@ -51,310 +57,309 @@
         <!-- Opening -->
 				<section>
 					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
-					<h1>GDI Reveal.js</h1>
-					<h2>Girl Develop It's Framework for HTML Presentations</h2>
-					<p>
-						<small>Found at <a href ="https://github.com/girldevelopit/gdi-slides-template">Girl Develop It reveal.js fork</a>.</small>
-					</p>
-					<p>
-						<small>Original Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h1>Intro to jQuery</h1>
 				</section>
         <!-- Compatibility-->
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.</p>
+					<h2>Review DOM and Data!</h2>
+					<p>Our favorite Data Types</p>
+<pre><code contenteditable class="javascript">var myString = "This is a string!";
+var myInteger = 1;
+var myBoolean = true;
+var myArray = ["string", 1, myVar, true];
+var myObject = {
+	name: "Pamela",
+	adjective: "Cool",
+	roles: ["hacker", "teacher", "coder"]
+}</code></pre>
 
-						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
-					</p>
+        <p>Traversing the DOM with JavaScript</p>
+<pre><code contenteditable class="javascript">document.getElementById('presentation');
+document.getElementsByClassName('slide');
+document.getElementsByTagName('body');
+document.querySelectorAll('a');
+document.querySelector('img');</code></pre>
 				</section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<!-- Examples of basic html based slides -->
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-                <section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-                    <p>P.S. This won't work when running the slides locally unless you run reveal.js runs from a local web server.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Examples of code slides-->
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>For HTML -- Surround your code pre, then code class "xml".</p>
-<pre><code class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>We can also make code editable</p>
-<pre><code contenteditable class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
-
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>CSS</p>
-<pre><code contenteditable class ="css">body{
-  background-color: #ffffff;
-}
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Javascript</p>
-<pre><code contenteditable class ="javascript">function helloWorld(){
-  var name = 'GDI';
-  alert("Hi, " + name)
-}
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>PHP</p>
-<pre><code contenteditable class ="php">function helloWorld(){
-  $name = 'GDI';
-  echo "Hi, " . $name;
-}
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-<p>Ruby</p><pre><code contenteditable class ="ruby">def hello_world
-  @name = 'GDI'
-  puts "Hi, #{@name}"
-end
-</code></pre>
-				</section>
-
-         <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Python</p>
-<pre><code contenteditable class ="python">def hello_world():
-  name = "GDI"
-  print 'Hi, ' + name
-  return
-</code></pre>
- 				</section>
-
- 				 <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Java</p>
-<pre><code contenteditable class ="java">public void helloWorld(){
-  String name = "GDI";
-  System.out.println("Hi," + name)
-}
-</code></pre>
- 				</section>
-
-
-        <!-- Elements entering one at a time-->
         <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+          <h2>What's a library?</h2>
+          <p>A collection of reusable methods for a particular purpose.</p>
+          <p>A math library might have functions like:</p>
+<pre><code contenteditable class="javascript">math.sum(array);
+math.pow(num, num);
+math.factorial(num);</code></pre>
+        </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/14/1">down</a>.
-						</p>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-						<a href="#/14/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<a href="#/14/3" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        <section>
+          <h2>What's a library?</h2>
+          <ul>
+            <li>Include a script tag to the library on your page</li>
+            <li>Call functions from that library</li>
+          </ul>
+<pre><code contenteditable class="xml">&lt;body&gt;
 
+&#60;script src="http://imagine-it.org/math.js"&#62;&#60;&#47;script&#62;
+&#60;script&#62;
+	var answer = math.sum(2, 2);
+	alert(answer);
+&#60;&#47;script&#62;
+&lt;/body&gt;</code></pre>
+        </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <h2><a href="exercises/videoplayer_library.html">Exercise Time!</a></h2>
+        </section>
 
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						You know, we are nerds after all and will probably get a kick out of all of this HTML. BUT, if you really don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
+        <section>
+          <h2>jQuery: <br/>The most popular library</h2>
+          <p>Write less code for common tasks.</p>
+          <p>Abstract on top of cross-browser differences.</p>
+          <a href="http://jquery.com/"><img src="img/jquery.png"></a>
+          <p>Open source, big community</p>
+        </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+        <section>
+          <h2>jQuery: Why?</h2>
+          <p>No library:</p>
+<pre><code contenteditable class="javascript">var elems = document.getElementsByTagName("img");
+for (var i = 0; i< elems.length; i++) {
+  elems[i].style.display = "none";
+}</code></pre>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-            <a href="?theme=gdicool#/themes">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes">GDI Sunny</a> -
-            <a href="?theme=gdidefault#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+          <p>jQuery:</p>
+<pre><code contenteditable class="javascript">$('img').hide();</code></pre>
+        <aside class="notes">
+          shorter, cross-browser
+        </aside>
+        </section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+        <section>
+          <h2>jQuery: Why?</h2>
+          <p>No library:</p>
+<pre><code contenteditable class="javascript">var p = document.createElement('p');
+p.appendChild(document.createTextNode('Welcome!'));
+p.style.cssFloat = 'left';
+p.style.backgroundColor = 'red';
+p.className = 'special';
+document.querySelector('div.header').appendChild(p);</code></pre>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
+          <p>jQuery:</p>
+<pre><code contenteditable class="javascript">var newP = $('&#60;p&#62Welcome!&#60;&#47;p&#62');
+newP.css({'float': 'left', 'background-color': 'red'});
+newP.addClass('special');
+$('div.header').append(newP);</code></pre>
 
+          <aside class="notes">shorter, cross-browser</aside>
+        </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/1">like this</a>.
-					</p>
-				</section>
+        <section>
+          <h2>jQuery: The Basics</h2>
+<pre><code class="xml">&lt;p&gt;Welcome to jQuery!&lt;/p&gt;</code></pre>
+          ⬇️
+<pre><code class="javascript">$('p').addClass('special');</code></pre>
+          ⬇️
+<pre><code class="xml">&lt;p class="special">Welcome to jQuery!&lt;/p&gt;</code></pre>
+        </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+        <section>
+          <h2>jQuery Recipe:<br/>Select, Manipulate, Admire</h2>
+          <p>Step 1: Select element</p>
+<pre><code contenteditable class="javascript">$('p');</code></pre>
+          <p> Step 2: Use a jQuery method to manipulate </p>
+<pre><code contenteditable class="javascript">$('p').addClass('special');</code></pre>
+          <p> Step 3: Admire your results! </p>
+        </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Girl Develop It</h3>
-					<h4>Special thanks to: Hakim El Hattab / hakim.se</h4>
-				</section>
+        <section>
+          <h2>jQuery: The Basics</h2>
+<pre><code class="javascript">$('p').addClass('special');</code></pre>
+          <table>
+            <tr>
+              <td><pre><code class="javascript">$</code></pre></td>
+              <td><p style="font-size: 0.6em;">The global jQuery function. <br> Can also be "jQuery".</p></td>
+            </tr>
+            <tr>
+              <td><pre><code class="javascript">('p')</code></pre></td>
+              <td><p style="font-size: 0.6em;">Finds DOM element(s) according to what's in the quotes. <br> Returns a "jQuery collection."</p></td>
+            </tr>
+            <tr>
+              <td><pre><code class="javascript">addClass('special')</code></pre></td>
+              <td><p style="font-size: 0.6em;">Built-in jQuery method that adds the specified class to the collection.
+                <br><a href="http://api.jquery.com/addClass/" target="_blank">Read the docs here.</a></td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>jQuery: Finding Elements</h2>
+          <p>All CSS selectors are valid, plus more. <a href="http://api.jquery.com/category/selectors/">Read the docs.</a></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>With this HTML…</th>
+                <th>We find it this way:
+              </tr>
+            </thead>
+            <tr>
+              <td><pre><code class="xml">&lt;p&gt;Welcome!&lt;/p&gt;</code></pre></td>
+              <td><pre><code class="javascript">$('p')</code></pre></td>
+            </tr>
+            <tr>
+              <td><pre><code class="xml">&lt;div id="main"&gt;Welcome!&lt;/div&gt;</code></pre><br></td>
+              <td><pre><code class="javascript">$('#main')</code></pre><br></td>
+            </tr>
+            <tr>
+              <td><pre><code class="xml">&lt;p class="intro"&gt;Welcome!&lt;/p&gt;</code></pre><br></td>
+              <td><pre><code class="javascript">$('.intro')</code></pre><br></td>
+            </tr>
+            <tr>
+              <td><pre><code class="xml">&lt;div id="main"&gt;
+  &lt;p class="intro"&gt;Welcome!&lt;/p&gt;
+&lt;/div&gt;</code></pre></td>
+              <td><pre>$('#main .intro')</pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2><a href="exercises/domaccess.html">Exercise Time!</a></h2>
+        </section>
+
+        <section>
+          <h2>jQuery: Reading Elements</h2>
+          <p>If we start with this HTML…</p>
+<pre><code class="xml">&lt;a id="yahoo" href="http://www.yahoo.com" style="font-size:20px"&gt;Yahoo!&lt;/a&gt;</code></pre>
+          <p>We can find it...
+<pre><code class="javascript">$('a#yahoo');</code></pre>
+          </p>
+          <p>We can store it...
+<pre><code class="javascript">var myLink = $('a#yahoo');</code></pre>
+          </p>
+          <p>...And we can find out lots of things about it:</p>
+          <table>
+            <tr>
+              <td><pre><code class="javascript">myLink.html();</code></pre></td>
+              <td>→</td>
+              <td><pre>'Yahoo!'</pre></td>
+            </tr>
+            <tr>
+              <td><pre><code class="javascript">myLink.attr('href');</code></pre></td>
+              <td>→</td>
+              <td><pre>'http://www.yahoo.com'</pre></td>
+            </tr>
+            <tr>
+              <td><pre><code class="javascript">myLink.css('font-size');</code></pre></td>
+              <td>→</td>
+              <td><pre>'20px'</pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>jQuery: Changing Elements</h2>
+          <p>If we start with this HTML:</p>
+          <pre><code class="xml">&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;</code></pre>
+          <p>We can use this jQuery:</p>
+<pre><code class="javascript">$('a').html('Yahoo!');
+$('a').attr('href', 'http://www.yahoo.com');
+$('a').css({'color': 'purple'});</code></pre>
+          <p>And we'll get this:</p>
+<pre><code class="xml">&lt;a href="http://www.yahoo.com" style="color:purple"&gt;Yahoo&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>jQuery Recipe: Create, Manipulate & Inject</h2>
+          <p>Step 1: Create element and store a reference</p>
+          <pre><code class="javascript">var p = $('&lt;p&gt;')</code></pre>
+          <p>Step 2: Use a method to manipulate (optional)</p>
+          <pre><code class="javascript">p.addClass('special');</code></pre>
+          <p> Step 3: Inject into your HTML </p>
+          <pre><code class="javascript">$('body').append(p);</code></pre>
+        </section>
+
+        <section>
+          <h2>jQuery: Create and Store</h2>
+          <p>Pass in any HTML string and jQuery will create it and return it as a collection.</p>
+          <table style="width:100%;">
+            <thead>
+              <tr>
+                <th>With this jQuery...</th>
+                <th></th>
+                <th>We create this HTML:</th>
+              </tr>
+            </thead>
+            <tr>
+              <td><pre><code class="javascript">$('&lt;p&gt;');</code></pre></td>
+              <td>→</td>
+              <td><pre><code class="xml">&lt;p&gt;&lt;/p&gt;</code></pre></td>
+            </tr>
+            <tr>
+              <td><pre><code class="javascript">$('&lt;p&gt;Welcome!&lt;/p&gt;');</code></pre></td>
+              <td>→</td>
+              <td><pre><code class="xml">&lt;p&gt;Welcome!&lt;/p&gt;</code></pre></td>
+            </tr>
+            <tr>
+              <td><pre><code class="javascript">$('&lt;p class="intro"&gt;Welcome!&lt;/p&gt;');</code></pre></td>
+              <td>→</td>
+              <td><pre><code class="xml">&lt;p class="intro"&gt;Welcome!&lt;/p&gt;</code></pre></td>
+            </tr>
+          </table>
+
+          <p>Just like with the DOM API, we can store a reference to our new element in memory...</p>
+          <pre><code class="javascript">var myParagraph = $('&lt;p class="intro"&gt;Welcome!&lt;/p&gt;');</code></pre>
+        </section>
+
+        <section>
+          <h2>jQuery: Manipulate</h2>
+          <p>Now that we've stored a reference, we can make further revisions to our element.</p>
+          <pre><code class="javascript">var myParagraph = $('&lt;p class="intro"&gt;Welcome!&lt;/p&gt;');</code></pre>
+          <pre><code class="javascript">myParagraph.css('font-size','4em');</code></pre>
+        </section>
+
+        <section>
+          <h2>jQuery: Inject</h2>
+          <p>Now, we can take our stored reference to <code>myParagraph</code> and inject it somewhere!</p>
+          <pre><code class="javascript">$('body').append(myParagraph);</code></pre>
+          <pre><code class="javascript">$('body').prepend(myParagraph);</code></pre>
+        </section>
+
+        <section>
+          <h2>Regular DOM nodes to jQuery objects</h2>
+          <pre><code class="javascript">var paragraphs = $('p'); // an array</code></pre>
+          <pre><code class="javascript">var myParagraph = paragraphs[0]; // a regular DOM node</code></pre>
+          <pre><code class="javascript">var $myParagraph = $(paragraphs[0]); // a jQuery Object</code></pre>
+					<p>We can also loop through our array...</p>
+<pre><code class="javascript">for(var i = 0; i < paragraphs.length; i++) {
+  var element = paragraphs[i];
+  var paragraph = $(element);
+  paragraph.html(paragraph.html() + ' wowee!!!!');
+};</code></pre>
+        </section>
+
+        <section>
+          <h2>jQuery: Including</h2>
+          <p><a href="http://jquery.com/download/">Download</a> or link from an official CDN.</p>
+          <p>Then include using a &#60;script&#62 tag on the page.</p>
+<pre>&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hi!&lt;/h1&gt;
+  &lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  // Your code here
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+        </section>
+
+        <section>
+          <h2><a href="exercises/videoplayer_jquery.html">Exercise Time!</a></h2>
+        </section>
 
 			</div>
   		<footer>
         <div class="copyright">
-          Official class name here -- Chapter name here (if content modified from original) --
+          Intro to jQuery -- Girl Develop It --
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
